@@ -27,7 +27,8 @@ This sample script is used to call PowerBI API's using PBI Powershell Modules fr
 The below Script you can run in your local machine for internal testing, for integrating this script with Azure DevOps, please download the file which have been attached here.
 
 
-````$applicationId = "" # Need to pass the clientid from devops variable 
+````
+$applicationId = "" # Need to pass the clientid from devops variable 
 $clientsec = "" | ConvertTo-SecureString -AsPlainText -Force # Need to pass from devops secret variable 
  
 $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $clientsec 
